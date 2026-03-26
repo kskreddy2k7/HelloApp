@@ -3,10 +3,10 @@ public class HelloApp {
 
         String names;
 
-        if (args.length == 0) {
-            names = "World";
-        } else {
+        if (args.length > 0) {
             names = String.join(", ", args);
+        } else {
+            names = "World";
         }
 
         System.out.println("Hello, " + names + "!");
